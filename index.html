@@ -1,0 +1,836 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-7580334-2');
+
+    </script-->
+
+    <script>
+      function toggleblock(blockId)
+        {
+   var block = document.getElementById(blockId);
+   if (block.style.display == 'none') {
+    block.style.display = 'block' ;
+   } else {
+    block.style.display = 'none' ;
+   }
+}
+
+    </script>
+
+    <title>Madhu Vankadari</title>
+
+
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+    <tr style="padding:0px">
+        <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;
+            border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr style="padding:0px">
+                    <td style="padding:2.5%;width:63%;vertical-align:middle">
+                        <p style="text-align:center">
+                            <name>Madhu Vankadari</name>
+                        </p>
+                        <p>I am a robotics researcher at <a href="https://www.tcs.com/research-and-innovation">TCS Research and Innovation</a>,
+                            where I design computer vision and control algorithms for robots.
+                        </p>
+                        <p>
+                             I completed my bachelors degree with major in Mechanical Engineering (8.88/10.0)
+                            at <a href="http://www.rgukt.in/">Rajiv Gandhi University of Knowledge Technologies</a>.
+                        </p>
+                        <p style="text-align:center">
+                            <a href="https://scholar.google.co.in/citations?user=St1130EAAAAJ&hl=en">Google Scholar</a>
+                            &nbsp/&nbsp
+                            <a href="https://in.linkedin.com/in/madhubabuv"> LinkedIn </a> &nbsp/&nbsp
+			    <a href="https://github.com/madhubabuv">Github</a>&nbsp/&nbsp
+                            <a href="mailto:accesstomadhu@gmail.com">Email</a>&nbsp/&nbsp<br><br>
+	                    <a href="data/resume.pdf">CV</a> &nbsp/&nbsp
+	                     <a href="#publications">Publications</a> 
+
+                        </p>
+                       <br>
+                        <h3>I am actively seeking a Ph.D position in Machine Vision area</h3>
+                    </td>
+                        <td style="padding:2.5%;width:40%;max-width:40%">
+                        <img style="width:100%;max-width:100%" alt="profile photo" src="new_imgs/madhu_circle.png" class="hoverZoomLink"/>
+                        </td>
+                </tr>
+                </tbody>
+            </table>
+            <table style="width:100%;border:0px;border-spacing:0px;
+            border-collapse:separate;margin-right:auto;
+            margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <heading>Research</heading>
+                        <p>
+                            I'm interested in robotics, computer vision and machine learning.
+                            Much of my research so far is on monocular depth and ego-motion estimation. I have also worked on
+                          drones and manipulators.
+                        </p>
+			<p><strong>Skills:</strong>
+						  <a href="https://www.python.org/">Python</a> |
+						  <a href='https://www.tensorflow.org/'>Tensorflow</a> |
+						  <a href='https://pytorch.org/'>PyTorch</a> |
+						  <a href="https://www.ros.org/">ROS</a> |
+                                                  <a href="http://gazebosim.org/">Gazebo</a>
+						 </p>
+                      	<br>
+		     <heading>Publications</heading>
+                    </td>
+                </tr>
+		
+                </tbody>
+            </table>
+
+            <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+
+
+                <tr id="icra_2020">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/icra_2020.png'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#icra_2020">
+                            <papertitle>Cyclically Consistent Unsupervised Monocular Depth estimation using patchGANs </papertitle>
+                        </a>
+                        <br>
+                        <strong>Madhu Vankadari</strong>,
+                        <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                        <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>
+                        <br><br>
+
+                        <p>The famous idea of cycle consistency is used to imporve the monocular depth
+                          estimation using patchGAN paradigm</p>
+
+                        <em>ICRA</em>, 2020, (*in Review) | <a href="javascript:toggleblock('icra_20_abs')">Abstract</a>
+                        <br>
+
+
+                      <p align="justify"> <i id="icra_20_abs" style="display: none;">
+                         In this paper, we propose a PatchGAN-based cycli-
+                        cally consistent deep learning architecture for monocular depth
+                        estimation using unsupervised learning. Cycle-consistency is
+                        achieved by introducing a Generator module, consisting of two
+                        deep networks, namely disp-Net (that learns a F ) and inv-disp-
+                        Net (that learns a function F'). The disp-Net F learns to predict
+                        disparity for a given monocular image. The inv-disp-Net F'
+                        regenerates the input image using the predicted disparity and
+                        the opposite stereo pair of the input image. The regenerated
+                        image is then evaluated by using a patch-based discriminator
+                        network that considers the input image as reference; thereby
+                        making the entire process cyclically consistent. This adversarial
+                        approach of learning, that enforces the function F' to be
+                        cycle-consistent with F , in a way constraints the possible
+                        solution mappings for disp-Net F , resulting into more accurate
+                        depth map. We perform several experimental studies and
+                        compared the results with existing state-of-the-art techniques
+                        for evaluating the performance of our approach. The proposed
+                        architecture is shown to provide about 13% improvement in
+                        terms of absolute error and about 8% improvement in RMSE
+                        metric over the latest state-of-the-art method on the popular
+                        outdoor driving KITTI and Oxford-robot car datasets, thereby,
+                        creating a new benchmark in this field</i></p>
+                    </td>
+                </tr> <!--ICRA 2020-->
+                <tr id="aaai_20" >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/aaai_2020.png'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#aaai_20">
+                            <papertitle>Unsupervised Monocualar Depth estimation for Night-time Images </papertitle>
+                        </a>
+                        <br>
+                        <strong>Madhu Vankadari</strong>,
+                        <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                        <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>
+                        <br><br>
+                      <p>In this paper, we look into the problem of estimating per-pixel depth map for
+                          monocular night images.</p>
+                        <em>CVPR</em>, 2020, (*in Review) | <a href="javascript:toggleblock('aaai_20_abs')">Abstract</a>
+                        <br>
+                      <p align="justify"> <i id="aaai_20_abs" style="display: none;">
+                        In this paper, we look into the problem of estimating
+			per-pixel depth map for ordinary RGB monocular night-
+			time images. The state-of-the art day-time depth estimation
+			methods fail miserably when tested with night-time images
+			due to a large domain shift between them. The usual photo-
+			metric losses used for training these networks may not work
+			for night-time images due to the absence of uniform lighting
+			which are commonly present in day-time images, making it
+			a difficult problem to solve. We propose to solve this prob-
+			lem by posing it as a domain adaptation problem where a
+			network trained with day-time images is adapted to work
+			for night-time images. Specifically, an encoder is trained
+			to generate features from night-time images which are in-
+			distinguishable from those obtained from day-time images
+			by using a PatchGAN-based adversarial discriminative do-
+			main adaptation technique. Unlike the existing methods
+			that directly adapt depth prediction, we propose to adapt
+			feature maps obtained from the convolutional layers of the
+			encoder network so that a day-time decoder can be directly
+			used for depth prediction from these adapted features. The
+			resulting method is termed as “Adversarial Domain Fea-
+			ture Adaptation (ADFA)” method and its efficacy is demon-
+			strated through experimentation on the challenging Oxford
+			night driving dataset. To the best of our knowledge, this
+			work is a first of its kind to estimate depth from uncon-
+			strained night-time monocular RGB images in a completely
+			unsupervised fashion. The usefulness and effectiveness of
+			the proposed algorithm is further validated through its ap-
+			plication to a visual place recognition problem where it is
+			shown to outperform other state-of-the-art methods in this
+			category</i></p>
+
+
+                    </td>
+                </tr> <!--AAAI 2020-->
+                <tr id="ijcai_19" >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/ijcai_2019.png'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#ijcai_19">
+                            <papertitle>Unsupervised Learning of Monocular Depth and Ego-Motion using Conditional
+                            PatchGANs </papertitle>
+                        </a>
+                        <br>
+                        <strong>Madhu Vankadari</strong>,
+                        <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                        <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>
+                        <br>
+                        <br>
+                      <p>This paper presents a new GAN-based deep learning framework for estimating absolute
+                          scale aware depth and ego motion from monocular images using a completely unsupervised
+                          mode of learning.</p>
+                        <em>IJCAI</em>, 2019 |<a href="javascript:toggleblock('ijcai_19_abs')">Abstract</a>
+                        | <a href="https://www.ijcai.org/proceedings/2019/787">Paper</a> | <a href="data/ijcai_19.pdf">Slides</a>
+                        <br>
+                      <p align="justify"> <i id="ijcai_19_abs" style="display: none;">
+                        This paper presents a new GAN-based deep learning framework for estimating absolute
+                        scale aware depth and ego motion from monocular images using a completely unsupervised
+                        mode of learning. The proposed architecture uses two separate generators to learn the
+                        distribution of depth and pose data for a given input image sequence. The depth and pose data,
+                        thus generated, are then evaluated by a patch-based discriminator using the reconstructed
+                        image and its corresponding actual image. The patch-based GAN (or PatchGAN) is shown to
+                        detect high frequency local structural defects in the reconstructed image, thereby
+                        improving the accuracy of overall depth and pose estimation. Unlike conventional GANs,
+                        the proposed architecture uses a conditioned version of input and output of the generator
+                        for training the whole network. The resulting framework is shown to outperform all existing
+                        deep networks in this field, beating the current state-ofthe-art method by 8.7% in absolute
+                        error and 5.2% in RMSE metric. To the best of our knowledge, this is first deep network based
+                        model to estimate both depth and pose simultaneously using a conditional patch-based GAN paradigm.
+                        The efficacy of the proposed approach is demonstrated through rigorous ablation studies and
+                        exhaustive performance comparison on the popular KITTI outdoor driving dataset.</i></p>
+                    </td>
+                </tr> <!--IJCAI 2019-->
+                <tr id='icra_19' >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/icra_2019.png'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#icra_19">
+                            <papertitle>Look No Deeper: Recognizing Places from Opposing Viewpoints under Varying Scene
+                              Appearance using Single-View Depth Estimation </papertitle>
+                        </a>
+                        <br>
+                        <a href="https://www.roboticvision.org/rv_person/sourav-garg/">Sourav Garg</a>,
+                        <strong>Madhu Vankadari</strong>,
+                        <a href="https://www.roboticvision.org/rv_person/thanuja-dharmasiri/">Thanuja Dharmasiri</a>,
+                        <a href="https://scholar.google.com/citations?user=zEUCB04AAAAJ&hl=en">Stephen Hausler</a>,
+                        <a href="http://www.nikosuenderhauf.info/">Niko Suenderhauf</a>,
+                      <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                      <a href="http://twd20g.blogspot.com/"> Tom Drummond</a>,
+                      <a href="https://wiki.qut.edu.au/display/cyphy/Michael+Milford">Michael Milford</a>
+                        <br>
+                        <br>
+                      <p>TIn this paper we present a new depth and temporal-aware visual place recognition system
+                          that solves the opposing viewpoint, extreme appearance-change visual place recognition
+                          problem. </p>
+                        <em>ICRA</em>, 2019 | <a href="javascript:toggleblock('icra_19_abs')">Abstract</a> | <a href="https://arxiv.org/abs/1902.07381">Paper</a>
+                        <br>
+                      <p align="justify"> <i id="icra_19_abs" style="display: none;">
+                        Visual place recognition (VPR) - the act of recognizing a familiar
+                        visual place - becomes difficult when there is
+                        extreme environmental appearance change or viewpoint change.
+                        Particularly challenging is the scenario where both phenomena
+                        occur simultaneously, such as when returning for the first time
+                        along a road at night that was previously traversed during the
+                        day in the opposite direction. While such problems can be solved
+                        with panoramic sensors, humans solve this problem regularly
+                        with limited field of view vision and without needing to constantly turn around.
+                        In this paper we present a new depth- and
+                        temporal-aware visual place recognition system that solves the
+                        opposing viewpoint, extreme appearance-change visual place
+                        recognition problem. Our system performs sequence-to-single
+                        matching by extracting depth-filtered keypoints using a stateof-the-art depth
+                        estimation pipeline, constructing a keypoint
+                        sequence over multiple frames from the reference dataset, and
+                        comparing those keypoints to those in a single query image.
+                        We evaluate the system on a challenging benchmark dataset
+                        and show that it consistently outperforms a state-of-the-art
+                        technique. We also develop a range of diagnostic simulation
+                        experiments that characterize the contribution of depth-filtered
+                        keypoint sequences with respect to key domain parameters
+                        including degree of appearance change and camera motion.</i></p>
+
+                    </td>
+                </tr> <!--ICRA 2019-->
+                <tr id='roman_19' >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/roman_2019.jpg'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#roman_19">
+                            <papertitle>SMAK-Net: Self Supervised Multi-level Spatial Attention Network
+                              for Knowledge Representation towards Imitation Learning</papertitle>
+                        </a>
+                        <br>
+                        <a href="https://in.linkedin.com/in/kartik-ramachandruni-88295013a">Kartik Ramachandruni</a>,
+                        <strong>Madhu Vankadari</strong>,
+                       <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>,
+                        <a href="https://iitk.ac.in/new/samrat-dutta">Samrat Dutta</a>,
+                      <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>
+                        <br>
+                        <br>
+                      <p>In this paper we present a new depth and temporal-aware visual place recognition system
+                          that solves the opposing viewpoint, extreme appearance-change visual place recognition
+                          problem. </p>
+                        <em>RoMAN</em>, 2019 (*Accepted) | <a href="javascript:toggleblock('roman_19_abs')">Abstract</a>
+                        <br>
+                      <p align="justify"> <i id="roman_19_abs" style="display: none;">
+                        This paper proposes an end-to-end self-supervised
+                        feature representation network named SMAK-Net for Imitation
+                        Learning. The proposed SMAK-Net incorporates a novel multilevel spatial attention module to amplify the relevant and
+                        suppress the irrelevant information while learning task-specific
+                        feature embeddings. The multi-level attention module takes
+                        multiple intermediate feature maps of the input image at
+                        different stages of the CNN pipeline and results a 2D matrix of
+                        compatibility scores for each feature map with respect to the
+                        given task. The weighted combination of the feature vectors
+                        with the scores estimated from attention modules leads to a
+                        more task specific feature representation of the input images.
+                        We have trained the network using a metric learning loss which
+                        aims to decrease the distance between the feature representations of simultaneous frames from multiple view points and
+                        increases the distance between the neighboring frames of the
+                        same view point. The experiments are performed on the publicly
+                        available Multi-View pouring dataset [1]. The outputs of the
+                        attention module are demonstrated to highlight the task specific
+                        objects while suppressing the rest of the background in the
+                        input image. The proposed method is validated by qualitative
+                        and quantitative comparisons with the state-of-the art technique
+                        TCN [1] along with intensive ablation studies. This method is
+                        shown to significantly outperform TCN by 6:5% in the temporal
+                        alignment error metric while reducing the total number of
+                        training steps by 155K.</i></p>
+
+
+                    </td>
+                </tr> <!--ROMAN 2019-->
+                <tr id='iros_18' >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/iros_2018.png'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#iros_18">
+                            <papertitle>UnDEMoN: Unsupervised Deep Network for Depth and Ego-Motion
+                              Estimation</papertitle>
+                        </a>
+                        <br>
+                        <strong>Madhu Vankadari</strong>,
+                        <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                        <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>,
+                      <a href="https://in.linkedin.com/in/kaushik-das-91555357">Kaushik Das</a>
+                        <br>
+                        <br>
+                      <p>This paper presents a deep network based unsupervised visual odometry system for
+                          6-DoF camera pose estimation and finding dense depth map for its monocular view</p>
+                        <em>IROS</em>, 2018 | <a href="javascript:toggleblock('iros_18_abs')">Abstract</a> |
+                      <a href="https://ieeexplore.ieee.org/document/8593864">Paper</a> |
+                      <a href="javascript:toggleblock('iros_18_vid')">Video</a> | 
+                      <a href="data/iros_18.pdf">Slides</a>
+                      <br>
+                      
+                      <p align="justify"> <i id="iros_18_abs" style="display: none;">
+                        This paper presents a deep network based unsupervised visual odometry system
+                        for 6-DoF camera pose estimation and finding dense depth map for its monocular view. The
+                        proposed network is trained using unlabeled binocular stereo
+                        image pairs and is shown to provide superior performance in
+                        depth and ego-motion estimation compared to the existing stateof-the-art.
+                        This is achieved by introducing a novel objective
+                        function and training the network using temporally alligned
+                        sequences of monocular images. The objective function is based
+                        on the Charbonnier penalty applied to spatial and bi-directional
+                        temporal reconstruction losses. The overall novelty of the
+                        approach lies in the fact that the proposed deep framework
+                        combines a disparity-based depth estimation network with
+                        a pose estimation network to obtain absolute scale-aware 6-
+                        DoF camera pose and superior depth map. According to our
+                        knowledge, such a framework with complete unsupervised endto-end
+                        learning has not been tried so far, making it a novel
+                        contribution in the field. The effectiveness of the approach is
+                        demonstrated through performance comparison with the stateof-the-art
+                        methods on KITTI driving dataset</i></p>
+<div id="iros_18_vid" style="display:none;padding:20px">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/z1vKHM0R5K8"
+                              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                              picture-in-picture" allowfullscreen>
+
+                      </iframe>
+                        </div>
+
+                    </td>
+                </tr> <!--IROS 2018-->
+                <tr id='icuas_18' >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/icuas_2018.png'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#icuas_18">
+                            <papertitle>A Reinforcement Learning Approach for Autonomous Control
+                              and Landing of a Quadrotor</papertitle>
+                        </a>
+                        <br>
+                        <strong>Madhu Vankadari</strong>,
+                        <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                        <a href="#">Chinmay Shinde</a>,
+                      <a href="https://in.linkedin.com/in/kaushik-das-91555357">Kaushik Das</a>
+                        <br>
+                        <br>
+                      <p>This paper presents a deep network based unsupervised visual odometry system for
+                          6-DoF camera pose estimation and finding dense depth map for its monocular view</p>
+                        <em>ICUAS</em>, 2018 | <a href="javascript:toggleblock('icuas_18_abs')">Abstract</a> |
+                      <a href="https://ieeexplore.ieee.org/document/8593864">Paper</a> |
+                      <a href="javascript:toggleblock('icuas_18_vid')">Video</a>
+                        <br>
+                     
+                        <p align="justify"> <i id="icuas_18_abs" style="display: none;">
+                          This paper looks into the problem of precise
+                          autonomous landing of an Unmanned Aerial Vehicle (UAV)
+                          which is considered to be a difficult problem as one has
+                          to generate appropriate landing trajectories in presence of
+                          dynamic constraints, such as, sudden changes in wind velocities
+                          and directions, downwash effects, change in payload etc. The
+                          problem is further compounded due to uncertainties arising
+                          from inaccurate model information and noisy sensor readings.
+                          The problem is partially solved by proposing a Reinforcement
+                          Learning (RL) based controller that uses Least Square Policy
+                          Iteration (LSPI) to learn the optimal control policies required
+                          for generating these trajectories. The efficacy of the approach
+                          is demonstrated through both simulation and real-world experiments
+                          with actual Parrot AR drone 2.0. According to our
+                          study, this is the first time such experimental results have been
+                          presented using RL based controller for drone landing, making
+                          it a novel contribution in this field</i></p>
+ 				<div id="icuas_18_vid" style="padding:10px;display:none;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2VEvsnSuiWA"
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                                 picture-in-picture" allowfullscreen></iframe>
+                      </div>
+
+
+                    </td>
+                </tr> <!--ICUAS 2018-->
+                <tr id='icra_17' >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/icar_2017.png'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#icar_17">
+                            <papertitle>Designing of self tuning PID controller
+                              for AR drone quadrotor</papertitle>
+                        </a>
+                        <br>
+                        <strong>Madhu Vankadari</strong>,
+                        <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                      <a href="https://in.linkedin.com/in/kaushik-das-91555357">Kaushik Das</a>
+                        <br>
+                        <br>
+                                            <p>In this paper, a gradient decent based methodologyis employed to tune the Proportional-Integral-Derivative
+                          (PID)controller parameters for AR Drone quadrotor.</p>
+                        <em>ICAR</em>, 2017 | <a href="javascript:toggleblock('icar_17_abs')">Abstract</a>
+                      | <a href="https://ieeexplore.ieee.org/abstract/document/8023513">Paper</a> |
+                      <a href="javascript:toggleblock('icar_17_vid')">Video</a>
+                        <br>
+                        
+
+                        <p align="justify"> <i id="icar_17_abs" style="display: none;">
+                          In this paper, a gradient decent based methodology is employed to
+                          tune the Proportional-Integral-Derivative (PID) controller parameters
+                          for AR Drone quadrotor. The three PID controller parameters, proportional
+                          gain (Kp), integral gain (Ki) and derivative gain (Kd) are tuned online while flying.
+                          The proposed technique has been demonstrated through two test cases.
+                          One is the way-point navigation and other is the leader-follower formation control.
+                          The experimental result as well as simulations result have shown for both the cases.</i></p>
+<div id="icar_17_vid" style="display:none;padding:10px;">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/8gK4ld6qIoM"
+                                  frameborder="0" allow="accelerometer; autoplay;
+                          encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </td>
+                </tr> <!--ICAR 2017-->
+                <tr id='isco_16' >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/isco_2016.png'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#isco_16">
+                            <papertitle> An autonomous path finding robot using Q-learning </papertitle>
+                        </a>
+                        <br>
+                        <strong>Madhu Vankadari</strong>,
+                        <a href="https://www.linkedin.com/in/vamshikrishnau/">Vamsi Krishna U</a>,
+                      <a href="">Shehansha Sk</a>
+                        <br>
+                        <br>
+                      <p>The main objective of this paper is to develop an autonomous robot that show the use of Q-learning
+                          for navigation in a complete unknown environment.</p>
+                        <em>ISCO</em>, 2016 |  <a href="javascript:toggleblock('isco_16_abs')">Abstract</a> | <a href="https://ieeexplore.ieee.org/abstract/document/7727034">Paper</a>
+                        <br>
+                      <p align="justify"> <i id="isco_16_abs" style="display: none;">
+                          The main objective of this paper is to develop an autonomous robot that
+                        show the use of Q-learning for navigation in a complete unknown environment.
+                        This will calculate the shortest path from current state to goal state by analyzing
+                        the environment through captured images. Further the captured images will be processed
+                        through image processing and machine learning techniques. The proposed method also takes
+                        care of the obstacles present in that environment. Initially, the unknown environment
+                        will be captured using a camera. Obstacle detection method will be applied on it.
+                        Then the grid based map obtained from vision based obstacle detection method will
+                        be given to Q-Learning algorithm which will be further made live with motion planning.
+                      </i></p>
+                    </td>
+                </tr> <!--ISCO 2016-->
+
+
+                </tbody>
+            </table>
+
+            <!--table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tbody>
+                <tr>
+                    <td>
+                        <heading>Service</heading>
+                    </td>
+                </tr>
+                </tbody>
+            </table-->
+            <!--table width="100%" align="center" border="0" cellpadding="20">
+                <tbody>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+                    <td width="75%" valign="center">
+                        <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                        <br>
+                        <br>
+                        <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <img src="images/cs188.jpg" alt="cs188">
+                    </td>
+                    <td width="75%" valign="center">
+                        <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student
+                            Instructor, CS188 Spring 2011</a>
+                        <br>
+                        <br>
+                        <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student
+                            Instructor, CS188 Fall 2010</a>
+                        <br>
+                        <br>
+                        <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach",
+                            3rd Edition</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table-->
+            <!--table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                <tr>
+                    <td style="padding:0px">
+                        <br>
+                        <p style="text-align:right;font-size:small;">
+                            Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source
+                            code</a>,
+                            just add a link back to my website. Send me an email when you're done and I'll link to your
+                            new page from here:
+                            <a href="https://cs.stanford.edu/~poole/">&#10025;</a>
+                            <a href="http://www.cs.berkeley.edu/~akar/">&#10025;</a>
+                            <a href="http://www.eecs.berkeley.edu/~biancolin">&#10025;</a>
+                            <a href="http://www.rossgirshick.info/">&#10025;</a>
+                            <a href="http://www.cs.cmu.edu/~igkioule/">&#10025;</a>
+                            <a href="http://kelvinxu.github.io/">&#10025;</a>
+                            <a href="http://imagine.enpc.fr/~groueixt/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~cbfinn/">&#10025;</a>
+                            <a href="http://disi.unitn.it/~nabi/">&#10025;</a>
+                            <a href="http://changyeobshin.com/">&#10025;</a>
+                            <a href="https://mbanani.github.io/">&#10025;</a>
+                            <a href="https://aseembits93.github.io">&#10025;</a>
+                            <a href="http://fuwei.us/">&#10025;</a>
+                            <a href="http://www-bcf.usc.edu/~iacopoma/">&#10025;</a>
+                            <a href="https://lorisbaz.github.io/">&#10025;</a>
+                            <a href="https://dplarson.info/">&#10025;</a>
+                            <a href="http://chapiro.net/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~vitchyr/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~kellman/">&#10025;</a>
+                            <a href="http://www0.cs.ucl.ac.uk/staff/C.Godard/">&#10025;</a>
+                            <a href="http://www.cs.toronto.edu/~byang/">&#10025;</a>
+                            <a href="http://people.kyb.tuebingen.mpg.de/harmeling/">&#10025;</a>
+                            <a href="https://prakashmurali.bitbucket.io/">&#10025;</a>
+                            <a href="http://www.cs.bham.ac.uk/~exa371/">&#10025;</a>
+                            <a href="http://prosello.com/">&#10025;</a>
+                            <a href="http://www.ee.ucr.edu/~nmithun/">&#10025;</a>
+                            <a href="https://rmullapudi.bitbucket.io/">&#10025;</a>
+                            <a href="http://www.briangauch.com/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~coline/">&#10025;</a>
+                            <a href="https://www.andrew.cmu.edu/user/sjayasur/website.html">&#10025;</a>
+                            <a href="http://www.eecs.berkeley.edu/~rakelly/">&#10025;</a>
+                            <a href="https://gkioxari.github.io/">&#10025;</a>
+                            <a href="http://ai.stanford.edu/~hsong/">&#10025;</a>
+                            <a href="http://www.ee.ucr.edu/~mbappy/">&#10025;</a>
+                            <a href="http://adithyamurali.com/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~khoury/">&#10025;</a>
+                            <a href="https://prashanthtk.github.io/">&#10025;</a>
+                            <a href="http://tomhenighan.com/">&#10025;</a>
+                            <a href="http://mbchang.github.io/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~haarnoja/">&#10025;</a>
+                            <a href="http://web.stanford.edu/~sfort1/">&#10025;</a>
+                            <a href="http://www.arkin.xyz/">&#10025;</a>
+                            <a href="http://i-am-karan-singh.github.io/">&#10025;</a>
+                            <a href="https://pxlong.github.io/">&#10025;</a>
+                            <a href="https://dheeraj2444.github.io/">&#10025;</a>
+                            <a href="https://fabienbaradel.github.io/">&#10025;</a>
+                            <a href="https://ankitdhall.github.io/">&#10025;</a>
+                            <a href="http://nafiz.ml/">&#10025;</a>
+                            <a href="http://www.cs.cmu.edu/~aayushb">&#10025;</a>
+                            <a href="http://bjornstenger.github.io/">&#10025;</a>
+                            <a href="http://users.eecs.northwestern.edu/~mif365/">&#10025;</a>
+                            <a href="https://www.macs.hw.ac.uk/~ic14/">&#10025;</a>
+                            <a href="https://ai.stanford.edu/~kaidicao/">&#10025;</a>
+                            <a href="http://hengfan.byethost7.com/">&#10025;</a>
+                            <a href="https://reyhaneaskari.github.io/">&#10025;</a>
+                            <a href="https://tianheyu927.github.io/">&#10025;</a>
+                            <a href="http://people.csail.mit.edu/janner/">&#10025;</a>
+                            <a href="http://www.sjoerdvansteenkiste.com/">&#10025;</a>
+                            <a href="http://joaoloula.github.io/">&#10025;</a>
+                            <a href="https://bhairavmehta95.github.io/">&#10025;</a>
+                            <a href="https://palmieri.github.io/">&#10025;</a>
+                            <a href="https://psuriana.github.io/">&#10025;</a>
+                            <a href="http://yushi2.web.engr.illinois.edu/">&#10025;</a>
+                            <a href="http://ruthcfong.github.io/">&#10025;</a>
+                            <a href="https://shraman-rc.github.io/">&#10025;</a>
+                            <a href="http://rahulgarg.com/">&#10025;</a>
+                            <a href="http://www.cs.cmu.edu/~inigam/">&#10025;</a>
+                            <a href="http://djstrouse.com/">&#10025;</a>
+                            <a href="https://lekhamohan.github.io/">&#10025;</a>
+                            <a href="https://avijit9.github.io/">&#10025;</a>
+                            <a href="http://www.seas.ucla.edu/~sahba/">&#10025;</a>
+                            <a href="https://pages.jh.edu/~falambe1/">&#10025;</a>
+                            <a href="http://www.dcc.fc.up.pt/~vitor.cerqueira/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~bmild/">&#10025;</a>
+                            <a href="https://web.eecs.umich.edu/~subh/">&#10025;</a>
+                            <a href="http://www.cs.utexas.edu/~pgoyal/">&#10025;</a>
+                            <a href="http://www.eecs.wsu.edu/~fchowdhu/">&#10025;</a>
+                            <a href="https://aarzchan.github.io/">&#10025;</a>
+                            <a href="https://www.seas.upenn.edu/~oleh/">&#10025;</a>
+                            <a href="http://shamak.github.io/">&#10025;</a>
+                            <a href="http://jianfeng.us/">&#10025;</a>
+                            <a href="https://pulkitkumar95.github.io/">&#10025;</a>
+                            <a href="https://epiception.github.io/">&#10025;</a>
+                            <a href="https://weimengpu.github.io/">&#10025;</a>
+                            <a href="http://users.ices.utexas.edu/~faraz/">&#10025;</a>
+                            <a href="https://vitorgodeiro.github.io/">&#10025;</a>
+                            <a href="http://cgm.technion.ac.il/people/Roey/">&#10025;</a>
+                            <a href="https://mancinimassimiliano.github.io/">&#10025;</a>
+                            <a href="https://roshanjrajan.me/">&#10025;</a>
+                            <a href="http://irc.cs.sdu.edu.cn/~qingnan/">&#10025;</a>
+                            <a href="http://individual.utoronto.ca/yuenj/">&#10025;</a>
+                            <a href="https://akhileshgotmare.github.io/">&#10025;</a>
+                            <a href="http://vllab.ucmerced.edu/nakul/">&#10025;</a>
+                            <a href="https://hasibzunair.github.io/">&#10025;</a>
+                            <a href="http://dalezhou.com/">&#10025;</a>
+                            <a href="https://abhoi.github.io/">&#10025;</a>
+                            <a href="https://www.cse.unr.edu/~jyi/">&#10025;</a>
+                            <a href="http://www.liuzhaolun.com/">&#10025;</a>
+                            <a href="https://abhisheknaik.me/">&#10025;</a>
+                            <a href="https://cfernandezlab.github.io/">&#10025;</a>
+                            <a href="https://aasharma90.github.io/">&#10025;</a>
+                            <a href="https://kdizon.github.io/">&#10025;</a>
+                            <a href="https://www.cse.wustl.edu/~zhihao.xia/">&#10025;</a>
+                            <a href="http://mmozes.net/">&#10025;</a>
+                            <a href="https://kpertsch.github.io/">&#10025;</a>
+                            <a href="http://xiatianpei.com/">&#10025;</a>
+                            <a href="https://nsrishankar.github.io/">&#10025;</a>
+                            <a href="http://xujuefei.com/">&#10025;</a>
+                            <a href="https://www.cs.rochester.edu/u/lchen63/">&#10025;</a>
+                            <a href="http://deyachatterjee.github.io/">&#10025;</a>
+                            <a href="http://hossein1387.github.io/index.html">&#10025;</a>
+                            <a href="https://zx007zls.github.io/">&#10025;</a>
+                            <a href="http://people.eecs.berkeley.edu/~nol/">&#10025;</a>
+                            <a href="http://www.cs.princeton.edu/~jw60/">&#10025;</a>
+                            <a href="https://cseweb.ucsd.edu/~owen/">&#10025;</a>
+                            <a href="https://subhajitchaudhury.github.io/">&#10025;</a>
+                            <a href="https://sandarshp.github.io/">&#10025;</a>
+                            <a href="https://medhini.github.io/">&#10025;</a>
+                            <a href="http://cindyxinyiwang.github.io/">&#10025;</a>
+                            <a href="https://lasirenashann.github.io/">&#10025;</a>
+                            <a href="http://ambuj.se/">&#10025;</a>
+                            <a href="http://kylehsu.me/">&#10025;</a>
+                            <a href="https://ujjwal95.github.io/">&#10025;</a>
+                            <a href="https://aditya5558.github.io/">&#10025;</a>
+                            <a href="http://www.majumderb.com/">&#10025;</a>
+                            <a href="http://ylqiao.net/">&#10025;</a>
+                            <a href="https://xiaochunliu.github.io/">&#10025;</a>
+                            <a href="https://dhawgupta.github.io/">&#10025;</a>
+                            <a href="http://cliu.info/">&#10025;</a>
+                            <a href="https://taochenshh.github.io/">&#10025;</a>
+                            <a href="http://www-scf.usc.edu/~ayushj/">&#10025;</a>
+                            <a href="https://zexuehe.github.io/">&#10025;</a>
+                            <a href="https://ofkar.github.io/">&#10025;</a>
+                            <a href="https://amir-arsalan.github.io/">&#10025;</a>
+                            <a href="https://vinamrabenara.github.io/">&#10025;</a>
+                            <a href="https://likojack.bitbucket.io/">&#10025;</a>
+                            <a href="http://www-personal.umich.edu/~zeyu/">&#10025;</a>
+                            <a href="https://utkarshojha.github.io/">&#10025;</a>
+                            <a href="https://fahmidmorshed.github.io/">&#10025;</a>
+                            <a href="https://www.cs.ubc.ca/~setarehc/">&#10025;</a>
+                            <a href="http://viveksolanki.com/">&#10025;</a>
+                            <a href="http://webdiis.unizar.es/~alcolea/">&#10025;</a>
+                            <a href="http://www.songyaojiang.com/">&#10025;</a>
+                            <a href="https://www.csee.umbc.edu/~bhp1/">&#10025;</a>
+                            <a href="http://acl.mit.edu/people">&#10025;</a>
+                            <a href="https://vignanv.com/">&#10025;</a>
+                            <a href="https://liuyicun.me/">&#10025;</a>
+                            <a href="https://heyuanmingong.github.io/">&#10025;</a>
+                            <a href="https://abhishekaich27.github.io/">&#10025;</a>
+                            <a href="https://www.cs.ubc.ca/~saeidnp/">&#10025;</a>
+                            <a href="https://uuujf.github.io/">&#10025;</a>
+                            <a href="https://csjcai.github.io/">&#10025;</a>
+                            <a href="https://iphyer.github.io/Mingren_Website/">&#10025;</a>
+                            <a href="https://binzhubz.github.io/">&#10025;</a>
+                            <a href="https://steinar.dev/">&#10025;</a>
+                            <a href="https://tnq177.github.io/">&#10025;</a>
+                            <a href="https://jonathan-schwarz.github.io/">&#10025;</a>
+                            <a href="http://www.ronnieclark.co.uk/">&#10025;</a>
+                            <a href="http://www.aparnadhinakaran.com/">&#10025;</a>
+                            <a href="https://zjysteven.github.io/">&#10025;</a>
+                            <a href="http://aakash30jan.github.io/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~shelhamer/">&#10025;</a>
+                            <a href="https://junaidcs032.github.io/">&#10025;</a>
+                            <a href="https://liangxuy.github.io/">&#10025;</a>
+                            <a href="http://www.public.asu.edu/~ssarka18/">&#10025;</a>
+                            <a href="https://www.cs.toronto.edu/~jennachoi/">&#10025;</a>
+                            <a href="https://amankhullar.github.io/">&#10025;</a>
+                            <a href="https://vijayvee.github.io/">&#10025;</a>
+                            <a href="https://anmolgoel.dev/">&#10025;</a>
+                            <a href="https://chanh.ee/">&#10025;</a>
+                            <a href="https://jefflai108.github.io/">&#10025;</a>
+                            <a href="https://pvskand.github.io/">&#10025;</a>
+                            <a href="https://ariostgx.github.io/website/">&#10025;</a>
+                            <a href="https://www.cs.utexas.edu/~shreyd/">&#10025;</a>
+                            <a href="https://www.cedrick.cc/">&#10025;</a>
+                            <a href="https://onlytailei.github.io/">&#10025;</a>
+                            <a href="https://people.cs.vt.edu/liminyang/">&#10025;</a>
+                            <a href="https://alexander-kirillov.github.io/">&#10025;</a>
+                            <a href="https://sites.cs.ucsb.edu/~yanju/">&#10025;</a>
+                            <a href="https://www.cct.lsu.edu/~cliu/">&#10025;</a>
+                            <a href="https://sid2697.github.io/">&#10025;</a>
+                            <a href="https://brendonjeromebutler.com/">&#10025;</a>
+                            <a href="https://bthananjeyan.github.io/">&#10025;</a>
+                            <a href="https://leonidk.com/">&#10025;</a>
+                            <a href="http://bopeng.space/">&#10025;</a>
+                            <a href="https://gautamigolani.github.io/">&#10025;</a>
+                            <a href="https://rohitrango.github.io/">&#10025;</a>
+                            <a href="https://prithv1.github.io/">&#10025;</a>
+                            <a href="https://www.idiap.ch/~tpereira/">&#10025;</a>
+                            <a href="https://felipefelixarias.github.io/">&#10025;</a>
+                            <a href="https://sophieschau.github.io/">&#10025;</a>
+                            <a href="https://wensun.github.io/">&#10025;</a>
+                            <a href="http://cs.umanitoba.ca/~kumarkm/">&#10025;</a>
+                            <a href="https://sourav-roni.github.io/">&#10025;</a>
+                            <a href="https://parskatt.github.io/">&#10025;</a>
+                            <a href="https://rauldiaz.github.io/">&#10025;</a>
+                            <a href="https://uzeful.github.io/">&#10025;</a>
+                            <a href="https://roeiherz.github.io/">&#10025;</a>
+                            <a href="http://relh.net/">&#10025;</a>
+                            <a href="https://ars-ashuha.ru/">&#10025;</a>
+                            <a href="https://prieuredesion.github.io/">&#10025;</a>
+                            <a href="https://tsujuifu.github.io/">&#10025;</a>
+                            <a href="https://pranoy-k.github.io/website/">&#10025;</a>
+                            <a href="https://xiaoleiz.github.io/">&#10025;</a>
+                            <a href="https://users.ece.cmu.edu/~bahn/">&#10025;</a>
+                            <a href="http://eracah.github.io/">&#10025;</a>
+                            <a href="https://adityakusupati.github.io/">&#10025;</a>
+                            <a href="https://agadetsky.github.io/">&#10025;</a>
+                            <a href="https://coh1211.github.io/">&#10025;</a>
+                            <a href="https://people.eecs.berkeley.edu/~kevinlin/">&#10025;</a>
+                            <a href="https://bucherb.github.io/">&#10025;</a>
+                            <a href="https://naman-ntc.github.io/">&#10025;</a>
+                            <a href="https://nicolay-r.github.io/">&#10025;</a>
+                            <a href="https://sakshambassi.github.io/">&#10025;</a>
+                            <a href="https://maheshmohanmr.github.io/publications/">&#10025;</a>
+                            <a href="http://byang.org/">&#10025;</a>
+                            <br>
+                            Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a
+                                href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                        </p>
+                    </td>
+                </tr>
+                </tbody>
+            </table-->
+        </td>
+    </tr>
+</table>
+
+<footer>
+  <p style="text-align:center;">This website template is downloaded from <a href="https://github.com/jonbarron/website"> link</a></p>
+</footer>
+
+</body>
+
+</html>
