@@ -142,3 +142,8 @@ span.a {
   border: 1px solid blue;  
   background-color: yellow; 
 }
+div {
+  width:450px;
+  margin: auto;
+  border: 2px solid red;
+}
